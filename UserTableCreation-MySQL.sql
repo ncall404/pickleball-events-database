@@ -1,0 +1,10 @@
+CREATE TABLE User (
+    UserID INT AUTO_INCREMENT,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+	Email VARCHAR(80),
+	Password BINARY(70),
+	UserType VARCHAR(8),
+    PRIMARY KEY (UserID)
+);
+ALTER TABLE User AUTO_INCREMENT = 100;
