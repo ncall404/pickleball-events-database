@@ -1,8 +1,0 @@
-CREATE TABLE "USER" (
-    UserID INT IDENTITY(1,100000) PRIMARY KEY,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
-	Email VARCHAR(80),
-	"Password" BINARY(70),
-	UserType VARCHAR(8)
-);
