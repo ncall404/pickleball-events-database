@@ -11,7 +11,7 @@ CREATE TABLE `User` (
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
 	Email VARCHAR(80),
-	`Password` VARCHAR(97),
+	`Password` VARCHAR(150),
 	UserType VARCHAR(8),
     PRIMARY KEY (UserID)
 );
@@ -20,7 +20,7 @@ ALTER TABLE `User` AUTO_INCREMENT = 100000;
 CREATE TABLE State (
 	StateID INT AUTO_INCREMENT,
     StateName VARCHAR(75),
-    StateInitials VARCHAR(3), # This is different for every state, so maybe we should change this to be the primary key and get rid of StateID?
+    StateInitials VARCHAR(3),
     PRIMARY KEY (StateID)
 );
 ALTER TABLE State AUTO_INCREMENT = 1;
